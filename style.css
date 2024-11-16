@@ -1,11 +1,46 @@
-.raiz{
+.root{
     color: white;
 }
-header{
-    background-color: pink;
+body{
+    background-color: black;
+}
+.header{
     width: 100vw;
-    height: 50px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.link{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    width: 50px;
+    font-size: 16px;
+    text-decoration: underline;
+    border-radius: 8px;
+}
+.header .link-top{
+    margin-bottom: 20px;
+}
+.bg-titulo{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 100vw;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    height: 70px;
+    width: 50%;
+    background-color: rgb(119, 199, 0);
+    border-radius: 12px;
 }
