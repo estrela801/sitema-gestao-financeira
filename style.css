@@ -46,17 +46,21 @@ body{
     border-radius: 12px;
 }
 /* ----------------------------------- */
+main{
+    height: 400px;
+}
 .main-elements{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content:center;
-    margin: 10% auto;
     background-color: green;
-    height: 500px;
-    width: 70%;
+    max-height: 70%;
+    min-height: 180px;
+    width: 40%;
     border-radius: 10px;
+    margin: 10% auto 0;
 }
 .main-elements .main-title{
     color: white;
@@ -67,9 +71,23 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #7af12b;
-    width: 40%;
-    border-radius: 8px;
+    /* background-color: #7af12b; */
+    background-color: rgb(29, 28, 28);
+    color: white;
+    overflow-x: hidden;
+    height: 200px;
+    width: 60%;
+    margin: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.main-elements .main-content::-webkit-scrollbar{
+    width: 6px;
+    height: 4px;
+}
+.main-elements .main-content::-webkit-scrollbar-thumb{
+    background-color: rgb(80, 14, 119);
+    border-radius: 5px;
 }
 .main-elements .main-content span{
     font-size: 19px;
