@@ -29,7 +29,7 @@ function calculaEconomia(valor, receita, tempo, dma) {
         return console.log("Sua receita não pode ser 0, hipócrita");
     const valorDeEconomia = valor / tempo;
     const TempoDeEconomia = valorDeEconomia / tempo;
-    resposta(`Voce precisa economizar ${valorDeEconomia.toFixed(2)} no tempo de ${tempo} ${dma} voce precisa guardar ${TempoDeEconomia.toFixed(2)}`);
+    resposta(`Para economizar ${valor} no tempo de ${tempo} ${dma} voce precisa guardar ${valorDeEconomia} ou dobrar para ${tempo * 2} ${dma} e juntar ${TempoDeEconomia.toFixed(2)} por ${dma}`);
 }
 const btn = document.querySelector(".btn");
 if (btn) {
