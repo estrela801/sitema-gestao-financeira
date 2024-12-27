@@ -18,26 +18,29 @@
             <div class="flex">
                 <div class="main-content">
                     <label for="eco-max">Quanto quer economizar</label>
-                    <input type="number" name="eco-max" class="eco-max"  placeholder="Digite aqui">
+                    <input type="number" name="eco-max" class="valorEconomia">
                 </div>
                 <div class="main-content">
-                    <label for="receita">Receita mensal</label>
-                    <input type="number" name="receita">
+                    <label for="receita">Receita no periodo</label>
+                    <input type="number" name="receita" class="receita">
                 </div>
                 <div class="main-content">
                     <label for="tempo">Quanto tempo</label>
 
                     <div class="flex">
-                        <input type="number" name="tempo">
+                        <input type="number" name="tempo" class="tempo">
                         <select name="dma" id="" class="dma">
                             <option value="dias">Dias</option>
-                            <option value="mes">Mês</option>
-                            <option value="anos">Anos</option>
+                            <option value="mes">Mês/Meses</option>
+                            <option value="anos">Ano/Anos</option>
                         </select>
                     </div>
                 </div>
             </div>
             <button class="btn" type="button">Enviar</button>
+        </section>
+        <section class="main-elements">
+            <div class="resposta"></div>
         </section>
     </main>
     <div class="root"></div>
