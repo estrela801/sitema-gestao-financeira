@@ -4,8 +4,24 @@ const receita = document.querySelector('.receita');
 const tempoEconomia = document.querySelector('.tempo');
 const diaMesAno = document.querySelector('.dma');
 function resposta(texto) {
-    const resposta = document.querySelector('.resposta');
-    resposta.innerHTML = texto;
+    const elementOld = document.querySelector('.resposta');
+    const fatherOld = document.querySelector('.novo');
+    if (elementOld) {
+        elementOld.remove();
+        if (fatherOld)
+            fatherOld.remove();
+    }
+    else {
+        console.log('ja existe');
+        const section = document.createElement('section');
+        section.classList.add('main-elements');
+        section.classList.add('novo');
+        const resposta = document.createElement('div');
+        resposta.classList.add('resposta');
+        resposta.innerHTML = texto;
+        section.appendChild(resposta);
+        document.body.append(section);
+    }
 }
 function calculaEconomia(valor, receita, tempo, dma) {
     console.log("testasdasde");

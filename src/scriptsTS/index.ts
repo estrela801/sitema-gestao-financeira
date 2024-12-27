@@ -6,8 +6,24 @@ const diaMesAno = document.querySelector('.dma') as HTMLInputElement
 
 
 function resposta(texto:string){
-    const resposta = document.querySelector('.resposta') as HTMLElement
-    resposta.innerHTML = texto
+    const elementOld = document.querySelector('.resposta')
+    const fatherOld = document.querySelector('.novo')
+    if(elementOld){
+        elementOld.remove()
+        if(fatherOld)fatherOld.remove()
+         
+    }
+    else{
+        console.log('ja existe');
+        const section = document.createElement('section')
+        section.classList.add('main-elements')
+        section.classList.add('novo')
+        const resposta = document.createElement('div')
+        resposta.classList.add('resposta')
+        resposta.innerHTML = texto
+        section.appendChild(resposta)
+        document.body.append(section)
+    }
 }
 function calculaEconomia(valor:number,receita:number,tempo:number, dma:string){
     console.log("testasdasde");
